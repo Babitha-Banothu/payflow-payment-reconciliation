@@ -1,0 +1,1052 @@
+
+.recon-page {
+  width: 100%;
+  min-width: 0;
+  color: #38201f;
+  padding: 26px;
+  font-family: inherit;
+}
+
+.recon-page * {
+  box-sizing: border-box;
+}
+
+.recon-page-header,
+.recon-records-heading,
+.recon-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.recon-page-header {
+  margin-bottom: 25px;
+}
+
+.recon-eyebrow {
+  display: inline-block;
+  color: #b65a31;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.recon-page-header h1 {
+  margin: 0;
+  color: #421f25;
+  font-size: clamp(25px, 3vw, 32px);
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+
+.recon-page-header p,
+.recon-records-heading p,
+.recon-panel-heading p {
+  margin: 7px 0 0;
+  color: #887775;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.recon-refresh-button,
+.recon-view-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #ead9d1;
+  border-radius: 9px;
+  background: #fffaf6;
+  color: #743b32;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.recon-refresh-button:hover,
+.recon-view-button:hover {
+  border-color: #bd704a;
+  background: #fff0e6;
+}
+
+.recon-refresh-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.recon-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 19px;
+}
+
+.recon-summary-card,
+.recon-panel {
+  min-width: 0;
+  border: 1px solid #eee1d9;
+  border-radius: 13px;
+  background: #fffdfa;
+  box-shadow: 0 3px 14px rgba(72, 39, 30, 0.035);
+}
+
+.recon-summary-card {
+  padding: 19px;
+}
+
+.recon-summary-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  color: #806e69;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.recon-summary-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff0e6;
+  color: #b65a31;
+}
+
+.recon-summary-value {
+  margin-top: 12px;
+  color: #47232a;
+  font-size: clamp(23px, 2.5vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.7px;
+  overflow-wrap: anywhere;
+}
+
+.recon-summary-helper {
+  margin-top: 5px;
+  color: #988783;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.recon-analytics-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.85fr);
+  gap: 17px;
+  margin-bottom: 20px;
+}
+
+.recon-panel {
+  padding: 20px;
+}
+
+.recon-panel-heading {
+  margin-bottom: 22px;
+}
+
+.recon-panel-heading h2,
+.recon-records-heading h2 {
+  margin: 0;
+  color: #49252a;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.recon-status-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.recon-status-bar-row {
+  display: grid;
+  grid-template-columns: minmax(115px, 0.9fr) minmax(70px, 1.5fr) 45px;
+  align-items: center;
+  gap: 12px;
+}
+
+.recon-status-bar-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.recon-status-bar-label > strong {
+  color: #614a46;
+  font-size: 12px;
+}
+
+.recon-progress-track,
+.recon-confidence-track {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f1e9e4;
+}
+
+.recon-progress-fill,
+.recon-confidence-track > div {
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.recon-progress-matched {
+  background: #3d9970;
+}
+
+.recon-progress-partial {
+  background: #d58a37;
+}
+
+.recon-progress-unmatched {
+  background: #b96c47;
+}
+
+.recon-progress-rejected {
+  background: #ad4c4c;
+}
+
+.recon-progress-percent {
+  color: #8c7b76;
+  font-size: 11px;
+  text-align: right;
+}
+
+.recon-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.recon-status-matched {
+  color: #27744f;
+  background: #e8f5ed;
+}
+
+.recon-status-partial {
+  color: #96601f;
+  background: #fff2dc;
+}
+
+.recon-status-unmatched {
+  color: #9b542f;
+  background: #fff0e7;
+}
+
+.recon-status-rejected {
+  color: #a13d42;
+  background: #fbe9e9;
+}
+
+.recon-method-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.recon-method-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.recon-method-icon {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  color: #a95335;
+  background: #fff0e6;
+}
+
+.recon-method-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+  flex: 1;
+}
+
+.recon-method-info strong {
+  overflow-wrap: anywhere;
+  color: #51312d;
+  font-size: 12px;
+}
+
+.recon-method-info span {
+  color: #95817b;
+  font-size: 10px;
+}
+
+.recon-method-count {
+  color: #4c282b;
+  font-size: 15px;
+}
+
+.recon-average-confidence {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #f0e6df;
+  margin-top: 18px;
+  padding-top: 15px;
+  color: #826f69;
+  font-size: 12px;
+}
+
+.recon-average-confidence strong {
+  color: #3b805b;
+  font-size: 20px;
+}
+
+.recon-records-panel {
+  padding: 0;
+  overflow: hidden;
+}
+
+.recon-records-heading {
+  padding: 20px 21px;
+}
+
+.recon-record-count {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: #fff0e6;
+  color: #a45132;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.recon-filters {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 165px 190px;
+  gap: 11px;
+  padding: 0 21px 17px;
+}
+
+.recon-search-box {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #e9ddd6;
+  border-radius: 8px;
+  color: #9b827a;
+  background: #fff;
+}
+
+.recon-search-box:focus-within {
+  border-color: #c77b55;
+  box-shadow: 0 0 0 3px rgba(199, 123, 85, 0.1);
+}
+
+.recon-search-box input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  color: #432b28;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+}
+
+.recon-search-box input::placeholder {
+  color: #a79791;
+}
+
+.recon-search-box button {
+  display: grid;
+  place-items: center;
+  border: 0;
+  padding: 3px;
+  background: transparent;
+  color: #927d76;
+  cursor: pointer;
+}
+
+.recon-filters select {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  border: 1px solid #e9ddd6;
+  border-radius: 8px;
+  outline: none;
+  padding: 0 10px;
+  color: #60433d;
+  background: #fff;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.recon-filters select:focus {
+  border-color: #c77b55;
+}
+
+.recon-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-top: 1px solid #f0e7e1;
+}
+
+.recon-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.recon-table th {
+  padding: 13px 12px;
+  color: #8b7770;
+  background: #fcf7f2;
+  font-size: 10px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  white-space: nowrap;
+}
+
+.recon-table th:first-child,
+.recon-table td:first-child {
+  padding-left: 21px;
+}
+
+.recon-table td {
+  padding: 14px 12px;
+  border-top: 1px solid #f2eae5;
+  color: #604943;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.recon-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.recon-table tbody tr:hover {
+  background: #fffaf6;
+}
+
+.recon-match-id {
+  display: block;
+  color: #87462f;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.recon-cell-subtext {
+  display: block;
+  margin-top: 5px;
+  color: #a08d86;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.recon-merchant-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 130px;
+  font-weight: 650;
+}
+
+.recon-merchant-icon {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  color: #a75c3e;
+  background: #fff0e7;
+}
+
+.recon-money {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.recon-variance-zero {
+  color: #347b57;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.recon-variance-nonzero {
+  color: #ad493e;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.recon-confidence-cell {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 90px;
+}
+
+.recon-confidence-track {
+  width: 48px;
+  height: 6px;
+}
+
+.recon-confidence-track > div {
+  background: #3e966d;
+}
+
+.recon-confidence-cell > span {
+  color: #6f5a54;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.recon-view-button {
+  padding: 7px 9px;
+  border-radius: 7px;
+  font-size: 11px;
+}
+
+.recon-table-state {
+  height: 160px;
+  text-align: center !important;
+  color: #96827a !important;
+}
+
+.recon-table-state > svg {
+  display: block;
+  margin: 0 auto 9px;
+}
+
+.recon-table-state > span {
+  display: block;
+}
+
+.recon-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 21px;
+  border-top: 1px solid #f0e7e1;
+  color: #8c7973;
+  font-size: 11px;
+}
+
+.recon-pagination-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recon-pagination-actions > span {
+  color: #725d56;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.recon-pagination-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #e9ddd6;
+  border-radius: 7px;
+  padding: 7px 9px;
+  color: #704137;
+  background: #fff;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.recon-pagination-actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.recon-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 17px;
+  border: 1px solid #f0c8c2;
+  border-radius: 9px;
+  padding: 12px 14px;
+  color: #963d37;
+  background: #fff1ef;
+  font-size: 12px;
+}
+
+.recon-error button {
+  margin-left: auto;
+  border: 0;
+  color: #8d3b34;
+  background: transparent;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.recon-empty-inline {
+  color: #97847e;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.recon-spin {
+  animation: recon-spin 1s linear infinite;
+}
+
+@keyframes recon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Detail modal */
+
+.recon-modal-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(35, 20, 20, 0.58);
+  backdrop-filter: blur(3px);
+}
+
+.recon-detail-modal {
+  width: min(760px, 100%);
+  max-height: min(90vh, 900px);
+  overflow-y: auto;
+  border: 1px solid #eadbd2;
+  border-radius: 15px;
+  background: #fffdfa;
+  box-shadow: 0 18px 70px rgba(30, 14, 14, 0.25);
+}
+
+.recon-modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 22px;
+  border-bottom: 1px solid #eee2dc;
+  background: #fffdfa;
+}
+
+.recon-modal-header h2 {
+  margin: 0;
+  color: #49242a;
+  font-size: 19px;
+  overflow-wrap: anywhere;
+}
+
+.recon-icon-button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 1px solid #ebddd6;
+  border-radius: 9px;
+  color: #77534b;
+  background: #fff8f3;
+  cursor: pointer;
+}
+
+.recon-icon-button:hover {
+  background: #fbece3;
+}
+
+.recon-modal-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 220px;
+  color: #8d756d;
+  font-size: 13px;
+}
+
+.recon-modal-error {
+  margin: 18px;
+}
+
+.recon-detail-content {
+  padding: 20px 22px 25px;
+}
+
+.recon-detail-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  padding: 15px;
+  border: 1px solid #f0e3da;
+  border-radius: 11px;
+  background: #fff8f2;
+}
+
+.recon-detail-overview > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  min-width: 0;
+}
+
+.recon-detail-label {
+  color: #947d75;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.recon-detail-overview strong {
+  color: #50302d;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.recon-confidence-large {
+  color: #32805b !important;
+  font-size: 19px !important;
+}
+
+.recon-detail-section {
+  margin-top: 20px;
+  padding: 17px;
+  border: 1px solid #eee3dc;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.recon-detail-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 15px;
+  color: #512b2c;
+  font-size: 14px;
+}
+
+.recon-detail-section h3 svg {
+  color: #ad5c3d;
+}
+
+.recon-amount-comparison {
+  display: grid;
+  grid-template-columns: 1fr 35px 1fr;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 15px;
+  padding: 14px;
+  border-radius: 9px;
+  background: #fff8f2;
+}
+
+.recon-amount-comparison > div:not(.recon-amount-arrow) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.recon-amount-comparison span {
+  color: #927c73;
+  font-size: 10px;
+}
+
+.recon-amount-comparison strong {
+  color: #49252a;
+  font-size: clamp(13px, 2vw, 17px);
+  overflow-wrap: anywhere;
+}
+
+.recon-amount-arrow {
+  display: grid;
+  place-items: center;
+  color: #b66a46;
+}
+
+.recon-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 9px 0;
+  border-bottom: 1px solid #f3ece7;
+  font-size: 11px;
+}
+
+.recon-detail-row:last-child {
+  border-bottom: 0;
+}
+
+.recon-detail-row > span {
+  flex: 0 0 38%;
+  color: #927d75;
+}
+
+.recon-detail-row > strong {
+  color: #563c37;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.recon-line-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recon-line-card {
+  padding: 13px;
+  border: 1px solid #f0e4dd;
+  border-radius: 9px;
+  background: #fffaf6;
+}
+
+.recon-line-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 9px;
+  color: #78432f;
+  font-size: 11px;
+}
+
+.recon-line-card-top strong {
+  overflow-wrap: anywhere;
+}
+
+.recon-line-card-top span {
+  flex-shrink: 0;
+  padding: 4px 7px;
+  border-radius: 15px;
+  color: #9b5a35;
+  background: #ffeddf;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+/* Responsive layouts */
+
+@media (max-width: 1100px) {
+  .recon-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .recon-analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .recon-page {
+    padding: 17px 13px;
+  }
+
+  .recon-page-header {
+    align-items: flex-start;
+  }
+
+  .recon-page-header p {
+    max-width: 430px;
+  }
+
+  .recon-refresh-button {
+    padding: 9px;
+    font-size: 11px;
+  }
+
+  .recon-summary-grid {
+    gap: 10px;
+  }
+
+  .recon-summary-card {
+    padding: 14px;
+  }
+
+  .recon-summary-value {
+    font-size: 23px;
+  }
+
+  .recon-panel {
+    padding: 15px;
+  }
+
+  .recon-records-panel {
+    padding: 0;
+  }
+
+  .recon-records-heading {
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .recon-filters {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 16px 15px;
+  }
+
+  .recon-search-box {
+    grid-column: 1 / -1;
+  }
+
+  .recon-status-bar-row {
+    grid-template-columns: 115px minmax(40px, 1fr) 40px;
+    gap: 7px;
+  }
+
+  .recon-pagination {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 14px 16px;
+  }
+
+  .recon-pagination-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .recon-detail-overview {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recon-detail-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .recon-page {
+    padding: 14px 10px;
+  }
+
+  .recon-page-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .recon-refresh-button {
+    align-self: flex-start;
+  }
+
+  .recon-summary-card {
+    padding: 12px 10px;
+  }
+
+  .recon-summary-top {
+    align-items: flex-start;
+    font-size: 10px;
+  }
+
+  .recon-summary-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .recon-summary-icon svg {
+    width: 16px;
+  }
+
+  .recon-summary-value {
+    font-size: 21px;
+  }
+
+  .recon-summary-helper {
+    font-size: 10px;
+  }
+
+  .recon-records-heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .recon-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .recon-search-box {
+    grid-column: auto;
+  }
+
+  .recon-status-bar-row {
+    grid-template-columns: 105px minmax(35px, 1fr) 35px;
+    gap: 5px;
+  }
+
+  .recon-status {
+    padding: 4px 6px;
+    font-size: 9px;
+  }
+
+  .recon-status svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .recon-detail-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .recon-amount-comparison {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .recon-amount-arrow {
+    transform: rotate(90deg);
+  }
+
+  .recon-detail-section {
+    padding: 12px;
+  }
+
+  .recon-modal-backdrop {
+    padding: 8px;
+  }
+
+  .recon-detail-modal {
+    max-height: 94vh;
+  }
+
+  .recon-detail-row {
+    gap: 8px;
+    font-size: 10px;
+  }
+}

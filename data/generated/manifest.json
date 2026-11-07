@@ -1,0 +1,13 @@
+{
+    "project": "Payment Reconciliation System",
+    "seed": 20261022,
+    "scale": 0.02,
+    "dataset_version": "1.0",
+    "row_counts": {
+        "merchants": 40,
+        "payment_orders": 1000,
+        "payment_attempts": 1100,
+        "processor_events": 3041,
+        "processor_event_deliveries": 3073
+    }
+}

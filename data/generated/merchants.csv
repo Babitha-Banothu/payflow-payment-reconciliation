@@ -1,0 +1,41 @@
+merchant_id,merchant_name,email,country,default_currency,status,created_at
+MER-2026-000001,"Gomez, Campbell and Thompson",merchant1@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000002,Hall Inc,merchant2@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000003,"Petersen, Anderson and Gonzalez",merchant3@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000004,Fowler-Gallegos,merchant4@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000005,"Rodriguez, Lee and Hernandez",merchant5@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000006,Robinson Group,merchant6@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000007,Chapman LLC,merchant7@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000008,Richards Group,merchant8@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000009,Brown and Sons,merchant9@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000010,Ellis Inc,merchant10@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000011,"Walker, Mora and Cook",merchant11@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000012,Kim Group,merchant12@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000013,Simmons Ltd,merchant13@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000014,Martinez Group,merchant14@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000015,"Clark, Brown and Jones",merchant15@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000016,Evans and Sons,merchant16@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000017,Garcia Group,merchant17@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000018,Carroll Group,merchant18@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000019,Garrett-Stevenson,merchant19@example.test,DE,EUR,INACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000020,Diaz PLC,merchant20@example.test,DE,EUR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000021,Smith-Castillo,merchant21@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000022,Dyer Ltd,merchant22@example.test,DE,EUR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000023,Torres PLC,merchant23@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000024,"Rodgers, Ortega and Simon",merchant24@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000025,Mcdonald-Richard,merchant25@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000026,Johnson LLC,merchant26@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000027,"Lawrence, Browning and Blair",merchant27@example.test,DE,EUR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000028,Hughes LLC,merchant28@example.test,DE,EUR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000029,Smith-Daniel,merchant29@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000030,"Harris, Odom and Davidson",merchant30@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000031,"Grant, Norris and Hunt",merchant31@example.test,DE,EUR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000032,"Frost, Ramirez and Beck",merchant32@example.test,DE,EUR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000033,Stewart-Gould,merchant33@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000034,"Roth, Kelly and Navarro",merchant34@example.test,US,USD,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000035,Thompson-Mason,merchant35@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000036,Robertson-Hayes,merchant36@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000037,"Bright, Johnson and Bowman",merchant37@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000038,Holt-Adams,merchant38@example.test,GB,GBP,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000039,"Chang, Dixon and Flowers",merchant39@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00
+MER-2026-000040,Pope Group,merchant40@example.test,IN,INR,ACTIVE,2025-12-31T00:00:00+00:00

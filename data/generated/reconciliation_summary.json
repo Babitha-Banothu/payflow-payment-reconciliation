@@ -1,0 +1,24 @@
+{
+    "seed": 20261022,
+    "total_settlement_batches": 870,
+    "total_bank_statement_lines": 821,
+    "total_reconciliation_matches": 888,
+    "total_exceptions": 122,
+    "total_exception_items": 123,
+    "match_status_counts": {
+        "MATCHED": 766,
+        "PARTIAL": 37,
+        "UNMATCHED": 67,
+        "REJECTED": 18
+    },
+    "exception_counts": {
+        "AMOUNT_MISMATCH": 27,
+        "CURRENCY_MISMATCH": 10,
+        "DELAYED_SETTLEMENT": 51,
+        "DUPLICATE_BANK_ENTRY": 18,
+        "MATCHED": 766,
+        "MISSING_SETTLEMENT": 16,
+        "PARTIAL": 37
+    },
+    "validation": "PASSED"
+}
